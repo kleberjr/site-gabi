@@ -29,11 +29,11 @@ section {
 }
 
 h2 {
-    font-size: 2rem;
+    font-size: 1.7rem;
 }
 
 p {
-    font-size: 1.3rem;
+    font-size: 1.1rem;
 }
 
 .box {
@@ -42,10 +42,10 @@ p {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 20px;
+    gap: 15px;
 
     width: 100%;
-    height: 255px;
+    height: 200px;
     padding: 20px;
     border-radius: 20px 20px 0px 0px;
 
@@ -55,30 +55,30 @@ p {
 }
 
 @keyframes openAnimationMotivos {
-    0% {bottom: 270px;}
-    63% {bottom: 345px;}
-    100% {bottom: 336px;}
+    0% {bottom: 250px;}
+    63% {bottom: 309px;}
+    100% {bottom: 300px;}
 }
 @keyframes closeAnimationMotivos {
-    0% {bottom: 336px}
-    33% {bottom: 345px}
-    100% {bottom: 270px}
+    0% {bottom: 300px}
+    33% {bottom: 309px}
+    100% {bottom: 250px}
 }
 
 @keyframes openAnimationMomentos {
-    0% {bottom: 135px;}
-    63% {bottom: 210px;}
-    100% {bottom: 201px;}
+    0% {bottom: 115px;}
+    63% {bottom: 174px;}
+    100% {bottom: 165px;}
 }
 @keyframes closeAnimationMomentos {
-    0% {bottom: 201px}
-    33% {bottom: 210px}
-    100% {bottom: 135px}
+    0% {bottom: 165px}
+    33% {bottom: 174px}
+    100% {bottom: 115px}
 }
 
 
 #motivos {
-    bottom: 270px;
+    bottom: 250px;
     background-color: #3FA3FF;
 }
 #motivos.opened {
@@ -95,7 +95,7 @@ p {
 }
 
 #momentos {
-    bottom: 135px;
+    bottom: 115px;
     background-color: #2BE977;
 }
 #momentos.opened {
@@ -114,7 +114,7 @@ p {
 
 
 #apelido {
-    bottom: 0;
+    bottom: -20px;
     background-color: #AA3FFF;
 }
 
