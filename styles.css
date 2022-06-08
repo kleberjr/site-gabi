@@ -46,7 +46,7 @@ p {
 
     width: 100%;
     height: 160px;
-    padding: 20px;
+    padding: 15px;
     border-radius: 20px 20px 0px 0px;
 
     color: white;
@@ -55,31 +55,31 @@ p {
 }
 
 @keyframes openAnimationMotivos {
-    0% {bottom: 205px;}
-    63% {bottom: 264px;}
-    100% {bottom: 255px;}
+    0% {bottom: 185px;}
+    63% {bottom: 244px;}
+    100% {bottom: 235px;}
 }
 @keyframes closeAnimationMotivos {
-    0% {bottom: 245px}
-    33% {bottom: 264px}
-    100% {bottom: 205px}
+    0% {bottom: 235px}
+    33% {bottom: 244px}
+    100% {bottom: 185px}
 }
 
 @keyframes openAnimationMomentos {
-    0% {bottom: 80px;}
-    63% {bottom: 135px;}
-    100% {bottom: 130px;}
+    0% {bottom: 70px;}
+    63% {bottom: 129px;}
+    100% {bottom: 120px;}
 }
 @keyframes closeAnimationMomentos {
-    0% {bottom: 130px}
-    33% {bottom: 135px}
-    100% {bottom: 80px}
+    0% {bottom: 120px}
+    33% {bottom: 129px}
+    100% {bottom: 70px}
 }
 
 
 #motivos {
     height: 200px;
-    bottom: 205px;
+    bottom: 185px;
     background-color: #3FA3FF;
 }
 #motivos.opened {
@@ -97,7 +97,7 @@ p {
 
 #momentos {
     height: 200px;
-    bottom: 80px;
+    bottom: 70px;
     background-color: #2BE977;
 }
 #momentos.opened {
@@ -121,7 +121,7 @@ p {
 
 .line {
     width: 80px;
-    height: 7px;
+    height: 5px;
     border-radius: 5px;
     background-color: #FFFFFF;
 }
