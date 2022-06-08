@@ -29,7 +29,7 @@ section {
 }
 
 h2 {
-    font-size: 1.7rem;
+    font-size: 1.5rem;
 }
 
 p {
@@ -45,7 +45,7 @@ p {
     gap: 15px;
 
     width: 100%;
-    height: 170px;
+    height: 160px;
     padding: 20px;
     border-radius: 20px 20px 0px 0px;
 
@@ -55,31 +55,31 @@ p {
 }
 
 @keyframes openAnimationMotivos {
-    0% {bottom: 230px;}
-    63% {bottom: 289px;}
-    100% {bottom: 280px;}
+    0% {bottom: 220px;}
+    63% {bottom: 279px;}
+    100% {bottom: 270px;}
 }
 @keyframes closeAnimationMotivos {
-    0% {bottom: 280px}
-    33% {bottom: 289px}
-    100% {bottom: 230px}
+    0% {bottom: 270px}
+    33% {bottom: 279px}
+    100% {bottom: 220px}
 }
 
 @keyframes openAnimationMomentos {
-    0% {bottom: 100px;}
-    63% {bottom: 155px;}
-    100% {bottom: 150px;}
+    0% {bottom: 90px;}
+    63% {bottom: 145px;}
+    100% {bottom: 140px;}
 }
 @keyframes closeAnimationMomentos {
-    0% {bottom: 150px}
-    33% {bottom: 155px}
-    100% {bottom: 100px}
+    0% {bottom: 140px}
+    33% {bottom: 145px}
+    100% {bottom: 90px}
 }
 
 
 #motivos {
     height: 200px;
-    bottom: 230px;
+    bottom: 220px;
     background-color: #3FA3FF;
 }
 #motivos.opened {
@@ -97,7 +97,7 @@ p {
 
 #momentos {
     height: 200px;
-    bottom: 105px;
+    bottom: 90px;
     background-color: #2BE977;
 }
 #momentos.opened {
