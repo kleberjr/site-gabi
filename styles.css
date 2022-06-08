@@ -45,7 +45,7 @@ p {
     gap: 15px;
 
     width: 100%;
-    height: 200px;
+    height: 170px;
     padding: 20px;
     border-radius: 20px 20px 0px 0px;
 
@@ -55,30 +55,31 @@ p {
 }
 
 @keyframes openAnimationMotivos {
-    0% {bottom: 250px;}
-    63% {bottom: 309px;}
-    100% {bottom: 300px;}
+    0% {bottom: 230px;}
+    63% {bottom: 289px;}
+    100% {bottom: 280px;}
 }
 @keyframes closeAnimationMotivos {
-    0% {bottom: 300px}
-    33% {bottom: 309px}
-    100% {bottom: 250px}
+    0% {bottom: 280px}
+    33% {bottom: 289px}
+    100% {bottom: 230px}
 }
 
 @keyframes openAnimationMomentos {
-    0% {bottom: 115px;}
-    63% {bottom: 174px;}
-    100% {bottom: 165px;}
+    0% {bottom: 100px;}
+    63% {bottom: 155px;}
+    100% {bottom: 150px;}
 }
 @keyframes closeAnimationMomentos {
-    0% {bottom: 165px}
-    33% {bottom: 174px}
-    100% {bottom: 115px}
+    0% {bottom: 150px}
+    33% {bottom: 155px}
+    100% {bottom: 100px}
 }
 
 
 #motivos {
-    bottom: 250px;
+    height: 200px;
+    bottom: 230px;
     background-color: #3FA3FF;
 }
 #motivos.opened {
@@ -95,7 +96,8 @@ p {
 }
 
 #momentos {
-    bottom: 115px;
+    height: 200px;
+    bottom: 105px;
     background-color: #2BE977;
 }
 #momentos.opened {
@@ -114,7 +116,7 @@ p {
 
 
 #apelido {
-    bottom: -20px;
+    bottom: 0px;
     background-color: #AA3FFF;
 }
 
@@ -127,7 +129,7 @@ p {
 
 .title {
     font-weight: 700;
-    font-size: 1.4rem;
+    font-size: 1.2rem;
 }
 
 .content {
