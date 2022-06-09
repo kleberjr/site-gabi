@@ -14,7 +14,15 @@ const updateGreeting = () => {
 }
 
 const getApelido = () => {
-    return apelidos[dia];
+    // try {
+    //     const apelido = apelidos[mes][dia];
+    //     localStorage.setItem('apelidoAtual', apelido);
+    //     return apelido;
+    // } catch (e) {
+    //     return localStorage.getItem('apelidoAtual');
+    // }
+
+    return "meu doce de leite";
 }
 const updateApelido = () => {
     const apelidoBox = document.querySelector('#apelido');
@@ -75,18 +83,22 @@ const hideBox = (box) => {
 
 
 const apelidos = {
-    8: "meu doce de leite",
-    11: "meu girassol",
-    15: "meu bolo de chocolate",
-    18: "minha cinderela",
-    22: "minha tapioca",
-    25: "minha jasmin",
-    29: "minha florisbela",
-    2: "meu crepe de nutella",
-    6: "meu raio de sol",
-    9: "meu doce de coco",
-    13: "minha mulher abelha",
-    16: "meu mel"
+    6: {
+        8: "meu doce de leite",
+        11: "meu girassol",
+        15: "meu bolo de chocolate",
+        18: "minha cinderela",
+        22: "minha tapioca",
+        25: "minha jasmin",
+        29: "minha florisbela",
+    },
+    7: {
+        2: "meu crepe de nutella",
+        6: "meu raio de sol",
+        9: "meu doce de coco",
+        13: "minha mulher abelha",
+        16: "meu mel"
+    }
 }
 const motivos = {
     1: "você é a mulher mais encantadora desse mundo!",
@@ -133,48 +145,48 @@ const motivos = {
     42: "você é a mulher da minha vida!"
 }
 const momentos = {
-    1: "quando eu limpo o olho com a ponta do seu nariz",
-    2: "quando eu te encho de beijo",
-    3: "quando a gente cozinha juntos",
-    4: "quando a gente da banho no theo juntos",
-    5: "quando a gente ri juntos",
-    6: "quando a gente assiste filme coladinho",
-    7: "quando a gente se aconchega na minha posição no sono",
-    8: "quando a gente toca os pés no meio da madrugada pra garantir que tamo juntinho",
-    9: "quando você me diz porquê me ama ",
-    10: "quando você faz suas dancinhas sem sentido",
-    11: "quando a gente sai pra comer juntos",
-    12: "quando a gente dorme juntos",
-    13: "quando a gente fofoca juntos",
-    14: "quando eu faço carinho em você",
-    15: "quando você cuida de mim adoentado",
-    16: "quando a gente assiste casimiro juntos",
-    17: "quando você se preocupa com meu bem estar",
-    18: "quando a gente brinca de lutinha juntos (eu brinco com você, no caso)",
-    19: "quando a gente conta do nosso dia",
-    20: "quando você fica com ciúmes de mexerem na minha sombracelha",
-    21: "quando vai pro cinema juntos",
-    22: "quando você lembra de me dar o travesseiro pra eu por entre as pernas na hora de dormir",
-    23: "quando você me acorda me enchendo de beijo",
-    24: "quando a gente faz os planejamentos da nossa casa",
-    25: "quando a gente zoa um ao outro",
-    26: "quando a gente entrelaça as pernas e os dedos na hora do sono",
-    27: "quando a gente faz as trends do tiktok que você acha",
-    28: "quando a gente escova os dentes de casal",
-    29: "quando a gente tira cochilo de casal",
-    30: "quando você fica com ciúmes de mim",
-    31: "quando a gente zoa outras pessoas juntos",
-    32: "quando a gente dirige de casal",
-    33: "quando a gente planeja mentira pra escapar dos nossos amigos",
-    34: "quando você levanta o pescoço pra eu por meu braço no meio do sono",
-    35: "quando dorme na ligação sem perceber",
-    36: "quando você fica com ciúmes de eu dormir fora de casa",
-    37: "quando você fica emburrada se não receber o bom dia/boa noite",
-    38: "quando você me manda fotinhas de 'te amo fazendo alguma coisa' no whatsapp",
-    39: "quando você me ajuda a lembrar dos meus afazeres",
-    40: "quando a gente dorme de casal na ligação",
-    41: "quando você faz surpresas pra mim",
-    42: "quando você faz um draminha mas no final faz o que eu peço"
+    1: "eu limpo o olho com a ponta do seu nariz",
+    2: "eu te encho de beijo",
+    3: "a gente cozinha juntos",
+    4: "a gente da banho no theo juntos",
+    5: "a gente ri juntos",
+    6: "a gente assiste filme coladinho",
+    7: "a gente se aconchega na minha posição no sono",
+    8: "a gente toca os pés no meio da madrugada pra garantir que tamo juntinho",
+    9: "você me diz porquê me ama ",
+    10: "você faz suas dancinhas sem sentido",
+    11: "a gente sai pra comer juntos",
+    12: "a gente dorme juntos",
+    13: "a gente fofoca juntos",
+    14: "eu faço carinho em você",
+    15: "você cuida de mim adoentado",
+    16: "a gente assiste casimiro juntos",
+    17: "você se preocupa com meu bem estar",
+    18: "a gente brinca de lutinha juntos (eu brinco com você, no caso)",
+    19: "a gente conta do nosso dia",
+    20: "você fica com ciúmes de mexerem na minha sombracelha",
+    21: "vai pro cinema juntos",
+    22: "você lembra de me dar o travesseiro pra eu por entre as pernas na hora de dormir",
+    23: "você me acorda me enchendo de beijo",
+    24: "a gente faz os planejamentos da nossa casa",
+    25: "a gente zoa um ao outro",
+    26: "a gente entrelaça as pernas e os dedos na hora do sono",
+    27: "a gente faz as trends do tiktok que você acha",
+    28: "a gente escova os dentes de casal",
+    29: "a gente tira cochilo de casal",
+    30: "você fica com ciúmes de mim",
+    31: "a gente zoa outras pessoas juntos",
+    32: "a gente dirige de casal",
+    33: "a gente planeja mentira pra escapar dos nossos amigos",
+    34: "você levanta o pescoço pra eu por meu braço no meio do sono",
+    35: "dorme na ligação sem perceber",
+    36: "você fica com ciúmes de eu dormir fora de casa",
+    37: "você fica emburrada se não receber o bom dia/boa noite",
+    38: "você me manda fotinhas de 'te amo fazendo alguma coisa' no whatsapp",
+    39: "você me ajuda a lembrar dos meus afazeres",
+    40: "a gente dorme de casal na ligação",
+    41: "você faz surpresas pra mim",
+    42: "você faz um draminha mas no final faz o que eu peço"
 }
 
 
