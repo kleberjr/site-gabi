@@ -19,6 +19,7 @@ const getApelido = () => {
         localStorage.setItem('apelidoAtual', apelido);
         return apelido;
     } catch (e) {
+        console.log(apelido)
         return localStorage.getItem('apelidoAtual');
     }
 }
@@ -189,7 +190,7 @@ const momentos = {
 
 
 const data = new Date();
-const mes = data.getMonth();
+const mes = data.getMonth() + 1;
 const dia = data.getDate();
 const horas = data.getHours();
 
