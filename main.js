@@ -14,14 +14,16 @@ const updateGreeting = () => {
 }
 
 const getApelido = () => {
-    try {
-        const apelido = apelidos[mes][dia];
-        localStorage.setItem('apelidoAtual', apelido);
-        return apelido;
-    } catch (e) {
-        console.log(apelido)
-        return localStorage.getItem('apelidoAtual');
-    }
+    // const apelido = apelidos[mes][dia];
+
+    // if (apelido) {
+    //     localStorage.setItem('apelidoAtual', apelido);
+    //     return apelido;
+    // }
+    
+    // return localStorage.getItem('apelidoAtual');
+    
+    return 'meu girassol';
 }
 const updateApelido = () => {
     const apelidoBox = document.querySelector('#apelido');
