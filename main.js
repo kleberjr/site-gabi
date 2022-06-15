@@ -1,15 +1,14 @@
 const updateGreeting = () => {
     const greeting = document.querySelector('.greeting');
-    const apelido = getApelido();
 
     if (horas >= 0 && horas < 5) {
-        greeting.textContent = `boa madrugada, ${apelido}`;
+        greeting.textContent = `boa madrugada, flor da madrugada`;
     } else if (horas >= 5 && horas < 12) {
-        greeting.textContent = `bom dia, ${apelido}`;
+        greeting.textContent = `bom dia, flor do dia`;
     } else if (horas >= 12 && horas < 18) {
-        greeting.textContent = `boa tarde, ${apelido}`;
+        greeting.textContent = `boa tarde, flor da tarde`;
     } else {
-        greeting.textContent = `boa noite, ${apelido}`;
+        greeting.textContent = `boa noite, flor da noite`;
     }
 }
 
